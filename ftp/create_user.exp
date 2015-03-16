@@ -1,0 +1,6 @@
+spawn pure-pw useradd joe -u ftpuser -d /home/ftpusers/joe
+expect "Password: "
+send "123456\r"
+expect "Enter it again: "
+send "123456\r"
+expect eof
